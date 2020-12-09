@@ -56,7 +56,7 @@ def register():
    if(user != None):
       return render_template("register.html")
 
-   db.users.insert_one({'userid': user_id, 'password': password_hash, 'volume':0})
+   db.users.insert_one({'userid': user_id, 'password': password_hash, 'vol1': 0.5, 'vol2': 0.5, 'vol3': 0.5, 'vol4': 0.5})
 
    return jsonify({'result': 'success'})
 
@@ -89,6 +89,27 @@ def logout():
     resp = jsonify({'result': 'success'})
     unset_jwt_cookies(resp)
     return resp
+
+@app.route('/api/save', methods=['POST'])
+@jwt_required
+def save():
+
+   userid = get_jwt_identity()
+
+   print("userid = ", userid)
+   vol1 = request.form['vol1']
+   vol2 = request.form['vol2']
+   vol3 = request.form['vol3']
+   vol4 = request.form['vol4']
+
+   print("volumes: ", vol1, vol2, vol3, vol4)
+
+   db.users.update_one({'userid': userid}, {'$set': {'vol1': vol1}})
+   db.users.update_one({'userid': userid}, {'$set': {'vol2': vol2}})
+   db.users.update_one({'userid': userid}, {'$set': {'vol3': vol3}})
+   db.users.update_one({'userid': userid}, {'$set': {'vol4': vol4}})
+
+   return jsonify({'result': 'success'})
 
 @app.route('/api/play', methods=["POST"])
 @jwt_required

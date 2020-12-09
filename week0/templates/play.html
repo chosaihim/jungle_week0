@@ -131,7 +131,7 @@
                 }
                 else{
                     audio_num.volume += 0.1;
-                    $(_vol_num).attr('placeholder',audio_num.volume - audio_num.volume % 0.1);
+                    $(_vol_num).attr('placeholder',audio_num.volume.toFixed(1));
                 }
 
             }
@@ -144,7 +144,7 @@
                 if(audio_num.volume < 0.1){
                     audio_num.volume = 0;
                 }
-                $(_vol_num).attr('placeholder',audio_num.volume);
+                $(_vol_num).attr('placeholder',audio_num.volume.toFixed(1));
 
             }
             //logout()
@@ -161,7 +161,7 @@
             })
         }
 
-            function toLogin() {
+        function toLogin() {
             $.ajax({
                 type: "GET",
                 url: "/api/login",
@@ -169,6 +169,21 @@
                 success: function (response) {
                     $('body').empty();
                     $('body').append(response);
+                }
+            })
+        }
+
+
+
+        function saveVol() {
+            $.ajax({
+                type: "POST",
+                url: "/api/save",
+                data: { "vol1": audio1.volume.toFixed(1),
+                        "vol2": audio2.volume.toFixed(1),
+                        "vol3": audio3.volume.toFixed(1),
+                        "vol4": audio4.volume.toFixed(1) },
+                success: function (response) {
                 }
             })
         }
@@ -241,7 +256,7 @@
             </div>
 
             <div class="save_button">
-                <button type="button" class="btn btn-primary" onclick="postMemo()">저장하기</button>
+                <button type="button" class="btn btn-primary" onclick="saveVol()">저장하기</button>
 
             </div>
 
