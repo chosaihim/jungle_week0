@@ -77,6 +77,7 @@ def login():
    return jsonify({'result': 'fail_id'})
 
 @app.route('/api/play', methods=["GET"])
+@jwt_required
 def mypage():
 	cur_user = get_jwt_identity()
 	if cur_user is None:
