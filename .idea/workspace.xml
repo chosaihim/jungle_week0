@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="92849478-1f26-4ea1-857b-88daefa5ebfc" name="디폴트 변경 목록" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jungle_week0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jungle_week0.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week0/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/week0/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week0/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/week0/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week0/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/week0/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week0/templates/m1.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/week0/static/m1.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week0/templates/m2.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/week0/static/m2.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week0/templates/m3.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/week0/static/m3.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week0/templates/play.html" beforeDir="false" afterPath="$PROJECT_DIR$/week0/templates/play.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +56,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Hyun\Daejjyu\jungle_week0\week0\static" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -78,40 +100,51 @@
       <option name="presentableId" value="Default" />
       <updated>1607479007891</updated>
       <workItem from="1607479008994" duration="2333000" />
-      <workItem from="1607481367530" duration="3455000" />
+      <workItem from="1607481367530" duration="4455000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="2660" y="-143" key="FileChooserDialogImpl" timestamp="1607481363979">
       <screen x="1920" y="-418" width="1920" height="1040" />
     </state>
     <state x="2660" y="-143" key="FileChooserDialogImpl/0.0.1280.680/1920.-418.1920.1040@1920.-418.1920.1040" timestamp="1607481363979" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1607488852616">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1607489790237">
       <screen x="1920" y="-418" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.-418.1920.1040@1920.-418.1920.1040" timestamp="1607488852616" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1607488852616">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.-418.1920.1040@1920.-418.1920.1040" timestamp="1607489790237" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1607489790237">
       <screen x="1920" y="-418" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1280.680/1920.-418.1920.1040@1920.-418.1920.1040" timestamp="1607488852616" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1607488852616">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1280.680/1920.-418.1920.1040@1920.-418.1920.1040" timestamp="1607489790237" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1607489790237">
       <screen x="1920" y="-418" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1280.680/1920.-418.1920.1040@1920.-418.1920.1040" timestamp="1607488852616" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1607488852616">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1280.680/1920.-418.1920.1040@1920.-418.1920.1040" timestamp="1607489790237" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1607489790237">
       <screen x="1920" y="-418" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1280.680/1920.-418.1920.1040@1920.-418.1920.1040" timestamp="1607488852616" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1280.680/1920.-418.1920.1040@1920.-418.1920.1040" timestamp="1607489790237" />
     <state x="2486" y="-321" key="SettingsEditor" timestamp="1607482399391">
       <screen x="1920" y="-418" width="1920" height="1040" />
     </state>
     <state x="2486" y="-321" key="SettingsEditor/0.0.1280.680/1920.-418.1920.1040@1920.-418.1920.1040" timestamp="1607482399391" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/jungle_week0$app.coverage" NAME="app Coverage Results" MODIFIED="1607488852609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week0" />
+    <SUITE FILE_PATH="coverage/jungle_week0$app.coverage" NAME="app Coverage Results" MODIFIED="1607489790230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week0" />
   </component>
 </project>
