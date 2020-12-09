@@ -15,18 +15,16 @@ from flask_jwt_extended import (
 
 app = Flask(__name__)
 
-# app.config['JWT_SECRET_KEY'] = 'elgnuj'  # Change dthis!
-
 app.config.update(
    DEBUG = True,
-   JWT_SECRET_KEY='elgnuj',
+   JWT_SECRET_KEY='jungle',
    # JWT_COOKIE_SECURE = False, # https를 통해서만 cookie가 갈 수 있는지 (production 에선 True)
    JWT_TOKEN_LOCATION = ['cookies'],
    JWT_ACCESS_COOKIE_PATH = '/', # access cookie를 보관할 url (Frontend 기준)
    JWT_REFRESH_COOKIE_PATH = '/', # refresh cookie를 보관할 url (Frontend 기준)
-   # # CSRF 토큰 역시 생성해서 쿠키에 저장할지
-   # # (이 경우엔 프론트에서 접근해야하기 때문에 httponly가 아님)
-   JWT_COOKIE_CSRF_PROTECT = False
+   # # CSRF 토큰 역시 생성해서 쿠키에 저장할지(이 경우엔 프론트에서 접근해야하기 때문에 httponly가 아님)
+   JWT_COOKIE_CSRF_PROTECT = False,
+
 )
 
 jwt = JWTManager(app)
@@ -61,9 +59,11 @@ def register():
 
    return jsonify({'result': 'success'})
 
+
 @app.route('/api/login', methods=['POST', 'GET'])
 def login():
    if request.method == 'GET':
+      print('yes')
       return render_template("index.html")
 
    user_id = request.form['userId']
@@ -83,6 +83,12 @@ def login():
       set_access_cookies(resp, access_token)
       set_refresh_cookies(resp, refresh_token)
       return resp
+
+@app.route('/api/logout', methods=['POST'])
+def logout():
+    resp = jsonify({'result': 'success'})
+    unset_jwt_cookies(resp)
+    return resp
 
 @app.route('/api/play', methods=["POST"])
 @jwt_required

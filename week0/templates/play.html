@@ -147,7 +147,31 @@
                 $(_vol_num).attr('placeholder',audio_num.volume);
 
             }
+            //logout()
+            function logout() {
+                let input_id = $('#inputId').val();
+                let input_password = $('#inputPassword').val();
+                $.ajax({
+                    type: "POST",
+                    url: "/api/logout",
+                    data: {},
+                    success: function (response) {
+                        toLogin();
+                    }
+            })
+        }
 
+            function toLogin() {
+            $.ajax({
+                type: "GET",
+                url: "/api/login",
+                data: {},
+                success: function (response) {
+                    $('body').empty();
+                    $('body').append(response);
+                }
+            })
+        }
 
         </script>
 
@@ -218,6 +242,12 @@
 
             <div class="save_button">
                 <button type="button" class="btn btn-primary" onclick="postMemo()">저장하기</button>
+
+            </div>
+
+            <div class="save_button">
+                <button type="button" class="btn btn-primary" onclick="logout()">로그아웃</button>
+
             </div>
 
 
