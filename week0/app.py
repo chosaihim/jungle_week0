@@ -37,7 +37,6 @@ db = client.week0
 @jwt_optional
 def home():
    cur_user = get_jwt_identity()
-   print(cur_user)
    if cur_user is not None:
       return render_template("play.html")
    return render_template("index.html")
@@ -63,7 +62,6 @@ def register():
 @app.route('/api/login', methods=['POST', 'GET'])
 def login():
    if request.method == 'GET':
-      print('yes')
       return render_template("index.html")
 
    user_id = request.form['userId']
