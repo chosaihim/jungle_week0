@@ -4,6 +4,7 @@ from werkzeug.security import check_password_hash, generate_password_hash
 
 
 
+
 app = Flask(__name__)
 
 
@@ -119,7 +120,10 @@ def play():
    	print("로그인 해주세요")
    else:
       print('로그인 유저', cur_user)
-      return render_template("play.html")
+
+      user = db.users.find_one({'userid': cur_user})
+
+      return render_template("play.html", _vol1 = user['vol1'], _vol2 = user['vol2'], _vol3 = user['vol3'], _vol4 = user['vol4'])
 
 if __name__ == '__main__':
    app.run('0.0.0.0',port=5000,debug=True)

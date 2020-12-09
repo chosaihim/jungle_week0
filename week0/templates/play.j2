@@ -71,20 +71,16 @@
             }
         </style>
         <script>
+            $(document).ready(function () {
+            });
+
 
             var audio1 = new Audio('../static/m1.mp3');
             var audio2 = new Audio('../static/m2.mp3');
             var audio3 = new Audio('../static/m3.mp3');
             var audio4 = new Audio('../static/m4.mp3');
 
-            $(document).ready(function () {
-                audio1.volume = {{_vol1}};
-                audio2.volume = {{_vol2}};
-                audio3.volume = {{_vol3}};
-                audio4.volume = {{_vol4}};
-            });
-
-
+            audio1.volume = {{_vol1}}
 
 
 
@@ -162,36 +158,37 @@
                     url: "/api/logout",
                     data: {},
                     success: function (response) {
-                        stop();
                         toLogin();
                     }
-                })
-            }
+            })
+        }
 
-            function toLogin() {
-                $.ajax({
-                    type: "GET",
-                    url: "/api/login",
-                    data: {},
-                    success: function (response) {
-                        $('body').empty();
-                        $('body').append(response);
-                    }
-                })
-            }
+        function toLogin() {
+            $.ajax({
+                type: "GET",
+                url: "/api/login",
+                data: {},
+                success: function (response) {
+                    $('body').empty();
+                    $('body').append(response);
+                }
+            })
+        }
 
-            function saveVol() {
-                $.ajax({
-                    type: "POST",
-                    url: "/api/save",
-                    data: { "vol1": audio1.volume.toFixed(1),
-                            "vol2": audio2.volume.toFixed(1),
-                            "vol3": audio3.volume.toFixed(1),
-                            "vol4": audio4.volume.toFixed(1) },
-                    success: function (response) {
-                    }
-                })
-            }
+
+
+        function saveVol() {
+            $.ajax({
+                type: "POST",
+                url: "/api/save",
+                data: { "vol1": audio1.volume.toFixed(1),
+                        "vol2": audio2.volume.toFixed(1),
+                        "vol3": audio3.volume.toFixed(1),
+                        "vol4": audio4.volume.toFixed(1) },
+                success: function (response) {
+                }
+            })
+        }
 
         </script>
 
@@ -202,13 +199,14 @@
 
             <h1> Volume Control Panel</h1>
 
+
             <div>
                 <div class = "volumes Row">
                     <div class="form-group Column" >
                         <div>
                             보컬
                         </div>
-                        <input id="vol1" class="input_box" disabled placeholder="{{_vol1}}">
+                        <input id="vol1" class="input_box" disabled placeholder= "{{_vol1}}" }}>
                         <div id="sound1" class="btn-group-vertical">
                             <button type="button" class="btn btn-secondary" onclick="volUp(audio1,'vol1')"> △ </button>
                             <button type="button" class="btn btn-secondary" onclick="volDown(audio1,'vol1')"> ▽ </button>
@@ -219,7 +217,7 @@
                         <div>
                             피아노
                         </div>
-                        <input id="vol2" class="input_box" disabled placeholder="{{_vol2}}">
+                        <input id="vol2" class="input_box" disabled placeholder="1">
                         <div id="sound2" class="btn-group-vertical">
                             <button type="button" class="btn btn-secondary" onclick="volUp(audio2,'vol2')"> △ </button>
                             <button type="button" class="btn btn-secondary" onclick="volDown(audio2,'vol2')"> ▽ </button>
@@ -230,7 +228,7 @@
                         <div>
                             베이스
                         </div>
-                        <input id="vol3" class="input_box" disabled placeholder="{{_vol3}}">
+                        <input id="vol3" class="input_box" disabled placeholder="1">
                         <div id="sound3" class="btn-group-vertical">
                             <button type="button" class="btn btn-secondary" onclick="volUp(audio3,'vol3')"> △ </button>
                             <button type="button" class="btn btn-secondary" onclick="volDown(audio3,'vol3')"> ▽ </button>
@@ -241,7 +239,7 @@
                         <div>
                             드럼
                         </div>
-                        <input id="vol4" class="input_box" disabled placeholder="{{_vol4}}">
+                        <input id="vol4" class="input_box" disabled placeholder="1">
                         <div id="sound4" class="btn-group-vertical">
                             <button type="button" class="btn btn-secondary" onclick="volUp(audio4,'vol4')"> △ </button>
                             <button type="button" class="btn btn-secondary" onclick="volDown(audio4,'vol4')"> ▽ </button>
