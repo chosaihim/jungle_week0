@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7554cca5-294c-4686-bebe-57f08ef7f5ef" name="디폴트 변경 목록" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JupyterTrust" id="4dc317d8-ac68-4411-a3c0-b8d0599ee0dc" />
+  <component name="ProjectId" id="1lN7culAJoJHTKG4Cg0DzQgeo7d" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="week0" type="PythonConfigurationType" factoryName="Python">
+      <module name="week0" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7554cca5-294c-4686-bebe-57f08ef7f5ef" name="디폴트 변경 목록" comment="" />
+      <created>1607425778459</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607425778459</updated>
+      <workItem from="1607425779834" duration="9112000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2649" y="-86" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607431615199">
+      <screen x="1920" y="-418" width="1920" height="1040" />
+    </state>
+    <state x="2649" y="-86" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.-418.1920.1040@1920.-418.1920.1040" timestamp="1607431615199" />
+    <state x="2506" y="-220" key="#검사" timestamp="1607425788991">
+      <screen x="1920" y="-418" width="1920" height="1040" />
+    </state>
+    <state x="2506" y="-220" key="#검사/0.0.1280.680/1920.-418.1920.1040@1920.-418.1920.1040" timestamp="1607425788991" />
+    <state width="1230" height="56" key="GridCell.Tab.0.bottom" timestamp="1607437171927">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1867" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.-418.1920.1040@1920.-418.1920.1040" timestamp="1607432447484" />
+    <state width="1230" height="56" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1607437171927" />
+    <state width="1230" height="56" key="GridCell.Tab.0.center" timestamp="1607437171927">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1867" height="163" key="GridCell.Tab.0.center/0.0.1280.680/1920.-418.1920.1040@1920.-418.1920.1040" timestamp="1607432447484" />
+    <state width="1230" height="56" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1607437171927" />
+    <state width="1230" height="56" key="GridCell.Tab.0.left" timestamp="1607437171927">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1867" height="163" key="GridCell.Tab.0.left/0.0.1280.680/1920.-418.1920.1040@1920.-418.1920.1040" timestamp="1607432447484" />
+    <state width="1230" height="56" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1607437171927" />
+    <state width="1230" height="56" key="GridCell.Tab.0.right" timestamp="1607437171927">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1867" height="163" key="GridCell.Tab.0.right/0.0.1280.680/1920.-418.1920.1040@1920.-418.1920.1040" timestamp="1607432447484" />
+    <state width="1230" height="56" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1607437171927" />
+    <state x="2381" y="-254" key="SettingsEditor" timestamp="1607426128235">
+      <screen x="1920" y="-418" width="1920" height="1040" />
+    </state>
+    <state x="2381" y="-254" key="SettingsEditor/0.0.1280.680/1920.-418.1920.1040@1920.-418.1920.1040" timestamp="1607426128235" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/week0$week0.coverage" NAME="week0 Coverage Results" MODIFIED="1607437171919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>
