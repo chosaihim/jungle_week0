@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7554cca5-294c-4686-bebe-57f08ef7f5ef" name="디폴트 변경 목록" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/week0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/week0.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="JupyterTrust" id="4dc317d8-ac68-4411-a3c0-b8d0599ee0dc" />
+  <component name="JupyterTrust" id="7cab2dd0-a118-4a72-8025-c4bc07df5e56" />
   <component name="ProjectId" id="1lN7culAJoJHTKG4Cg0DzQgeo7d" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -105,6 +106,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2649" y="-86" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607431615199">
@@ -115,6 +117,10 @@
       <screen x="1920" y="-418" width="1920" height="1040" />
     </state>
     <state x="2506" y="-220" key="#검사/0.0.1280.680/1920.-418.1920.1040@1920.-418.1920.1040" timestamp="1607425788991" />
+    <state x="641" y="223" key="FileChooserDialogImpl" timestamp="1607482016736">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="641" y="223" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607482016736" />
     <state width="1230" height="56" key="GridCell.Tab.0.bottom" timestamp="1607437171927">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -135,12 +141,13 @@
     </state>
     <state width="1867" height="163" key="GridCell.Tab.0.right/0.0.1280.680/1920.-418.1920.1040@1920.-418.1920.1040" timestamp="1607432447484" />
     <state width="1230" height="56" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1607437171927" />
-    <state x="2381" y="-254" key="SettingsEditor" timestamp="1607426128235">
-      <screen x="1920" y="-418" width="1920" height="1040" />
+    <state x="369" y="114" key="SettingsEditor" timestamp="1607482080923">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="2381" y="-254" key="SettingsEditor/0.0.1280.680/1920.-418.1920.1040@1920.-418.1920.1040" timestamp="1607426128235" />
+    <state x="369" y="114" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1607482080923" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/week0$week0.coverage" NAME="week0 Coverage Results" MODIFIED="1607437171919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/week0$week0.coverage" NAME="week0 Coverage Results" MODIFIED="1607482088236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
