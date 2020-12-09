@@ -17,6 +17,10 @@ db = client.week0
 
 @app.route('/')
 def home():
+   # cur_user = get_jwt_identity()
+   # print(cur_user)
+   # if cur_user is not None:
+   #    return render_template("play.html")
    return render_template("index.html")
 
 @app.route('/api/register', methods=['POST', 'GET'])
@@ -43,12 +47,22 @@ def register():
 @app.route('/api/login', methods=['POST', 'GET'])
 def login():
    if request.method == 'GET':
-      return render_template("play.html")
+      return render_template("index.html")
 
    user_id = request.form['userId']
    password = request.form['password']
-
    user = db.users.find_one({'userid': user_id})
+
+   # cur_user = get_jwt_identity()
+
+   # 이미 토큰이 발급되었고, 유효하다면 로그인 성공 반환
+   # if cur_user != None:
+   #    print('토큰잇음')
+   #    return jsonify(
+   #       result="success",
+   #       access_token=create_access_token(identity=user_id,
+   #                                        expires_delta=False)
+   #    )
 
    if(user == None):
       return jsonify({'result': 'fail_id'})
@@ -57,14 +71,12 @@ def login():
    elif(user_id == user['userid'] and password == user['password']):
       return jsonify(
          result="success",
-         # 검증된 경우, access 토큰 반환
          access_token=create_access_token(identity=user_id,
                                           expires_delta=False)
       )
    return jsonify({'result': 'fail_id'})
 
 @app.route('/api/play', methods=["GET"])
-@jwt_required
 def mypage():
 	cur_user = get_jwt_identity()
 	if cur_user is None:
