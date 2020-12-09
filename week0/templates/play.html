@@ -78,18 +78,22 @@
             var audio1 = new Audio('../static/m1.mp3');
             var audio2 = new Audio('../static/m2.mp3');
             var audio3 = new Audio('../static/m3.mp3');
+            var audio4 = new Audio('../static/m4.mp3');
+
 
 
             function play(){
                 audio1.play();
                 audio2.play();
                 audio3.play();
+                audio4.play();
             }
 
             function pause(){
                 audio1.pause();
                 audio2.pause();
                 audio3.pause();
+                audio4.pause();
             }
 
             function replay(){
@@ -97,20 +101,24 @@
                 audio1.currentTime = 0;
                 audio2.currentTime = 0;
                 audio3.currentTime = 0;
+                audio4.currentTime = 0;
 
                 audio1.play();
                 audio2.play();
                 audio3.play();
+                audio4.play();
             }
 
             function stop(){
                 audio1.pause();
                 audio2.pause();
                 audio3.pause();
+                audio4.pause();
 
                 audio1.currentTime = 0;
                 audio2.currentTime = 0;
                 audio3.currentTime = 0;
+                audio4.currentTime = 0;
             }
 
             function volUp(audio_num,vol_num){
@@ -155,7 +163,7 @@
 
                     <div class="form-group Column" >
                         <div>
-                            기타
+                            보컬
                         </div>
                         <input id="vol1" class="input_box" disabled placeholder="1">
                         <div id="sound1" class="btn-group-vertical">
@@ -177,12 +185,23 @@
 
                     <div class="form-group Column">
                         <div>
-                            드럼
+                            베이스
                         </div>
                         <input id="vol3" class="input_box" disabled placeholder="1">
                         <div id="sound3" class="btn-group-vertical">
                             <button type="button" class="btn btn-secondary" onclick="volUp(audio3,'vol3')"> △ </button>
                             <button type="button" class="btn btn-secondary" onclick="volDown(audio3,'vol3')"> ▽ </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group Column">
+                        <div>
+                            드럼
+                        </div>
+                        <input id="vol4" class="input_box" disabled placeholder="1">
+                        <div id="sound4" class="btn-group-vertical">
+                            <button type="button" class="btn btn-secondary" onclick="volUp(audio4,'vol4')"> △ </button>
+                            <button type="button" class="btn btn-secondary" onclick="volDown(audio4,'vol4')"> ▽ </button>
                         </div>
                     </div>
 
