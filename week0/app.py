@@ -1,5 +1,6 @@
 from flask import Flask, render_template, session, request, jsonify
 from flask_jwt_extended import *
+from werkzeug.security import check_password_hash, generate_password_hash
 
 
 
@@ -48,13 +49,14 @@ def register():
 
    user_id = request.form['userId']
    password = request.form['password']
+   password_hash = generate_password_hash(password, 'sha256')
 
    user = db.users.find_one({'userid': user_id})
    #해당 아이디 이미 있으면 fail
    if(user != None):
       return jsonify({'result': 'fail'})
 
-   db.users.insert_one({'userid': user_id, 'password': password, 'volume':0})
+   db.users.insert_one({'userid': user_id, 'password': password_hash, 'volume':0})
 
    return jsonify({'result': 'success'})
 
@@ -70,9 +72,9 @@ def login():
 
    if(user == None):
       return jsonify({'result': 'fail_id'})
-   elif(user_id == user['userid'] and password != user['password']):
+   elif(user_id == user['userid'] and not check_password_hash(user['password'], password)):
       return jsonify({'result': 'fail_password'})
-   elif(user_id == user['userid'] and password == user['password']):
+   elif(user_id == user['userid'] and check_password_hash(user['password'], password)):
       access_token = create_access_token(identity=user_id,
                                          expires_delta=False)
       refresh_token = create_refresh_token(identity=user_id,
