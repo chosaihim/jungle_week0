@@ -27,6 +27,8 @@
         <style type="text/css">
             * {
                 font-family: "Stylish", sans-serif;
+                background-size: cover;
+
             }
 
             h1{
@@ -36,6 +38,7 @@
             .wrap {
                 width: 900px;
                 margin: auto;
+                margin-top: 50px;
             }
 
             .input_box
@@ -51,8 +54,8 @@
 
             .save_button
             {
-                width: 100px;
                 margin: auto;
+                margin-bottom: 10px;
             }
             .volumes
             {
@@ -198,8 +201,8 @@
 
     </head>
 
-    <body>
-        <div class="wrap">
+    <body style="background-image: url( '../static/home.jpg' )" >
+        <div class="wrap text-center">
 
             <h1> Volume Control Panel</h1>
 
@@ -260,12 +263,8 @@
                 <button type="button" class="btn btn-primary" onclick="stop()"> ■ </button>
             </div>
 
-            <div class="save_button">
+            <div class="save_button text-center">
                 <button type="button" class="btn btn-primary" onclick="saveVol()">저장하기</button>
-
-            </div>
-
-            <div class="save_button">
                 <button type="button" class="btn btn-primary" onclick="logout()">로그아웃</button>
 
             </div>

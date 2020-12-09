@@ -20,14 +20,20 @@
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
 
+     <!-- 구글폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
+
     <title>로그인 페이지</title>
     <style type="text/css">
+        * {
+            font-family: "Stylish", sans-serif;
+            background-size: cover;
+        }
+
         .wrap {
             /*    전체 인터페이스 감싸기*/
-            width: 900px;
-            margin: 200px auto;
-            border-style: ridge;
-            border-radius: 5px;
+            width: 450px;
+            margin: 100px auto;
             padding: 10px;
         }
     </style>
@@ -83,12 +89,12 @@
     </script>
 </head>
 
-<body>
+<body style="background-image: url( '../static/home.jpg' )" >
 <div class="wrap">
     <div>
         <div class="text-center">
-            <button type="button" class="btn btn-primary btn-lg active" disabled>로그인</button>
-            <button type="button" class="btn btn-primary btn-lg" onclick=toRegister()>회원가입</button>
+            <button type="button" class="btn btn-secondary btn-lg active" disabled>로그인</button>
+            <button type="button" class="btn btn-secondary btn-lg" onclick=toRegister()>회원가입</button>
         </div>
         <hr>
          <div class="form-group">
@@ -100,7 +106,9 @@
             <label for="inputPassword">비밀번호</label>
             <input type="password" class="form-control" id="inputPassword" placeholder="비밀번호를 입력하세요">
         </div>
-        <button type="submit" class="btn btn-primary" onclick=login()>확인</button>
+        <div class="text-center">
+        <button type="submit" class="btn btn-dark" onclick=login()>확인</button>
+            </div>
     </div>
 </div>
 </body>
