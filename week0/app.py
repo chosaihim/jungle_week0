@@ -77,13 +77,13 @@ def login():
    return jsonify({'result': 'fail_id'})
 
 @app.route('/api/play', methods=["GET"])
-@jwt_required
-def mypage():
-	cur_user = get_jwt_identity()
-	if cur_user is None:
-		return "로그인 해주세요"
-	else:
-		return "어서오세요!" + cur_user + '님'
+# @jwt_required
+def play():
+	# cur_user = get_jwt_identity()
+	# if cur_user is None:
+	# 	return "로그인 해주세요"
+	# else:
+		return render_template("play.html")
 
 if __name__ == '__main__':
    app.run('0.0.0.0',port=5000,debug=True)

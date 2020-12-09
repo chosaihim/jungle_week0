@@ -60,6 +60,7 @@
                 url: "/api/login",
                 data: {},
                 success: function (response) {
+                    log(response)
                     $('body').empty();
                     $('body').append(response);
                 }

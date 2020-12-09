@@ -57,7 +57,8 @@
                 },
                 success: function (response) {
                     if (response['result'] == 'success') {
-                        mypage()
+                        play();
+
                     }else if(response['result'] == 'fail_id'){
                         alert('없는 아이디 입니다');
                         window.location.reload();
@@ -68,15 +69,16 @@
                     }
             })
         }
-            function mypage() {
+            function play() {
             $.ajax({
                 type: "GET",
                 url: "/api/play",
                 data: {},
                 success: function (response) {
-                    // $('body').empty();
-                    // $('body').append('play.html');
+                    $('body').empty();
+                    $('body').append(response);
                 }
+
             })
             }
     </script>
