@@ -54,10 +54,10 @@ db = client.week0
 
 @app.route('/')
 def home():
-   # cur_user = get_jwt_identity()
-   # print(cur_user)
-   # if cur_user is not None:
-   #    return render_template("play.html")
+   cur_user = get_jwt_identity()
+   print(cur_user)
+   if cur_user is not None:
+      return render_template("play.html")
    return render_template("index.html")
 
 @app.route('/api/register', methods=['POST', 'GET'])
@@ -111,7 +111,7 @@ def login():
       resp = jsonify({'login': True})
       set_access_cookies(resp, access_token)
       cur_user = get_jwt_identity()
-      print(cur_user)
+      # print(cur_user)
 
       return jsonify(
          result="success",
@@ -125,12 +125,13 @@ def play():
    # user_id = request.form['token']
    # print(user_id)
    cur_user = get_jwt_identity()
+   print('로그인 유저',cur_user)
    if cur_user is None:
    	print("로그인 해주세요")
    else:
-      print('로그인성공')
+      return render_template("play.html")
 
-   return render_template("play.html")
+
 
 
 # cur_user = get_jwt_identity()
