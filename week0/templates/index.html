@@ -57,6 +57,7 @@
                 },
                 success: function (response) {
                     if (response['result'] == 'success') {
+                        token = response['access_token']
                         play();
 
                     }else if(response['result'] == 'fail_id'){
@@ -71,9 +72,9 @@
         }
             function play() {
             $.ajax({
-                type: "GET",
+                type: "POST",
                 url: "/api/play",
-                data: {},
+                data: {"token": token},
                 success: function (response) {
                     $('body').empty();
                     $('body').append(response);
