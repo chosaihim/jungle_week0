@@ -57,9 +57,7 @@
                 },
                 success: function (response) {
                     if (response['result'] == 'success') {
-                        token = response['access_token']
                         play();
-
                     }else if(response['result'] == 'fail_id'){
                         alert('없는 아이디 입니다');
                         window.location.reload();
@@ -74,7 +72,7 @@
             $.ajax({
                 type: "POST",
                 url: "/api/play",
-                data: {"token": token},
+                data: {},
                 success: function (response) {
                     $('body').empty();
                     $('body').append(response);
