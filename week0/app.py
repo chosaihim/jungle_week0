@@ -54,7 +54,7 @@ def register():
    user = db.users.find_one({'userid': user_id})
    #해당 아이디 이미 있으면 fail
    if(user != None):
-      return jsonify({'result': 'fail'})
+      return render_template("register.html")
 
    db.users.insert_one({'userid': user_id, 'password': password_hash, 'volume':0})
 
