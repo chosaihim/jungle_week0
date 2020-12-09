@@ -39,7 +39,10 @@ db = client.week0
 def home():
    cur_user = get_jwt_identity()
    if cur_user is not None:
-      return render_template("play.html")
+      print('로그인 유저', cur_user)
+      user = db.users.find_one({'userid': cur_user})
+      return render_template("play.html", _vol1=user['vol1'], _vol2=user['vol2'], _vol3=user['vol3'],
+                             _vol4=user['vol4'])
    return render_template("index.html")
 
 @app.route('/api/register', methods=['POST', 'GET'])
