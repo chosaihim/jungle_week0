@@ -15,7 +15,6 @@ from flask_jwt_extended import (
     set_refresh_cookies, unset_jwt_cookies
 )
 
-app = Flask(__name__)
 
 app.config.update(
    DEBUG = True,
@@ -50,14 +49,20 @@ def register():
 
    user_id = request.form['userId']
    password = request.form['password']
+
+   # db에서 해당 id 찾기
+   user = db.users.find_one({'userid': user_id})
+   # 해당 아이디 이미 있으면 fail
+   if (user != None):
+      return jsonify({'result': 'same'})
+   # 아이디와 비밀번호가 공백이면 fail
+   if (str(user_id) == '' or str(password) == ''):
+      return jsonify({'result': 'empty'})
+
    password_hash = generate_password_hash(password, 'sha256')
 
-   user = db.users.find_one({'userid': user_id})
-   #해당 아이디 이미 있으면 fail
-   if(user != None):
-      return render_template("register.html")
-
-   db.users.insert_one({'userid': user_id, 'password': password_hash, 'vol1': 0.5, 'vol2': 0.5, 'vol3': 0.5, 'vol4': 0.5})
+   db.users.insert_one(
+      {'userid': user_id, 'password': password_hash, 'vol1': 0.5, 'vol2': 0.5, 'vol3': 0.5, 'vol4': 0.5})
 
    return jsonify({'result': 'success'})
 
