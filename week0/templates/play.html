@@ -142,7 +142,7 @@
                 console.log(audio_num.volume);
                 if(audio_num.volume > 0.9){
                     audio_num.volume = 1;
-                    $(_vol_num).attr('placeholder',1);
+                    $(_vol_num).attr('placeholder',(1).toFixed(1));
                 }
                 else{
                     audio_num.volume += 0.1;
@@ -157,7 +157,7 @@
                 console.log(audio_num.volume);
                 audio_num.volume -= 0.1;
                 if(audio_num.volume < 0.1){
-                    audio_num.volume = 0;
+                    audio_num.volume = 0.0;
                 }
                 $(_vol_num).attr('placeholder',audio_num.volume.toFixed(1));
 
