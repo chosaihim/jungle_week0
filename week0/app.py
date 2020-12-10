@@ -31,7 +31,8 @@ app.config.update(
 jwt = JWTManager(app)
 
 from pymongo import MongoClient
-client = MongoClient('localhost', 27017)
+# client = MongoClient('localhost', 27017)
+client = MongoClient('mongodb://a:a@13.124.64.131',27017) #ec-2 에서 접근할 때
 db = client.week0
 
 @app.route('/')
